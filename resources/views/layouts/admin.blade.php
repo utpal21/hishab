@@ -572,6 +572,13 @@ body {
               </ul>
             </div>
           </li>
+          <li class="sidebar-dropdown">
+            <a href="{{ route('agents.index') }}">
+              <i class="fa fa-tachometer-alt"></i>
+              <span>Agent</span>
+              <!-- <span class="badge badge-pill badge-warning">New</span> -->
+            </a>
+          </li>
 
         </ul>
       </div>
