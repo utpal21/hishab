@@ -18,13 +18,12 @@ Route::get('/', function () {
 Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
-
 // Auth::routes();
-
 // Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
-Route::resource('products','ProductController');
+Route::resource('products','ProductController')->middleware('auth');
 Route::resource('agents','AgentController')->middleware('auth');
 Route::resource('customers','CustomerController')->middleware('auth');
+Route::resource('accounts','AccountController')->middleware('auth');
 

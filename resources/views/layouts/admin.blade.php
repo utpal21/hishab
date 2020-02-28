@@ -585,6 +585,12 @@ body {
               <span>Customer</span>              
             </a>
           </li>
+          <li class="sidebar-dropdown">
+            <a href="{{ route('accounts.index') }}">
+              <i class="fa fa-tachometer-alt"></i>
+              <span>Account</span>              
+            </a>
+          </li>
 
         </ul>
       </div>
