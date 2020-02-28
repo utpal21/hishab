@@ -579,6 +579,12 @@ body {
               <!-- <span class="badge badge-pill badge-warning">New</span> -->
             </a>
           </li>
+          <li class="sidebar-dropdown">
+            <a href="{{ route('customers.index') }}">
+              <i class="fa fa-tachometer-alt"></i>
+              <span>Customer</span>              
+            </a>
+          </li>
 
         </ul>
       </div>
