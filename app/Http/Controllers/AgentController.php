@@ -39,7 +39,7 @@ class AgentController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'code' => 'required',
+            'code' => 'required|unique:agents',
             'name' => 'required',
         ]);
         $data = $request->all();
@@ -84,7 +84,7 @@ class AgentController extends Controller
     public function update(Request $request, Agent $agent)
     {
         $request->validate([
-            'code' => 'required',
+            'code' => 'required|unique:agents',
             'name' => 'required',
         ]);
         $data = $request->all();

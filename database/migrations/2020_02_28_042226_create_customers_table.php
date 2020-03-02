@@ -15,7 +15,7 @@ class CreateCustomersTable extends Migration
     {
         Schema::create('customers', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('code');
+            $table->string('code')->unique();
             $table->string('name');
             $table->boolean('active')->default("1");
             $table->timestamps();

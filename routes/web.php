@@ -26,4 +26,5 @@ Route::resource('products','ProductController')->middleware('auth');
 Route::resource('agents','AgentController')->middleware('auth');
 Route::resource('customers','CustomerController')->middleware('auth');
 Route::resource('accounts','AccountController')->middleware('auth');
+Route::resource('billings','BillingController')->middleware('auth');
 

@@ -511,7 +511,7 @@ body {
   <nav id="sidebar" class="sidebar-wrapper">
     <div class="sidebar-content">
       <div class="sidebar-brand">
-        <a href="#">pro sidebar</a>
+        <a href="#"></a>
         <div id="close-sidebar">
           <i class="fas fa-times"></i>
         </div>
@@ -550,7 +550,7 @@ body {
           <li class="header-menu">
             <span>General</span>
           </li>
-          <li class="sidebar-dropdown">
+          <!-- <li class="sidebar-dropdown">
             <a href="#">
               <i class="fa fa-tachometer-alt"></i>
               <span>Dashboard</span>
@@ -571,7 +571,7 @@ body {
                 </li>
               </ul>
             </div>
-          </li>
+          </li> -->
           <li class="sidebar-dropdown">
             <a href="{{ route('agents.index') }}">
               <i class="fa fa-user-circle"></i>
@@ -592,15 +592,15 @@ body {
             </a>
           </li>
           <li class="sidebar-dropdown">
-            <a href="{{ route('accounts.index') }}">
+            <a href="{{ route('billings.index') }}">
               <i class="fa fa-money fa-tachometer-alt"></i>
-              <span>Billings</span>              
+              <span>Billing</span>              
             </a>
           </li>
           <li class="sidebar-dropdown">
             <a href="{{ route('accounts.index') }}">
               <i class="fa fa-money fa-tachometer-alt"></i>
-              <span>Transection</span>              
+              <span>Transaction</span>              
             </a>
           </li>
 
