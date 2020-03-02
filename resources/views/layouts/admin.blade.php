@@ -572,6 +572,37 @@ body {
               </ul>
             </div>
           </li>
+          <li class="sidebar-dropdown">
+            <a href="{{ route('agents.index') }}">
+              <i class="fa fa-user-circle"></i>
+              <span>Agent</span>
+              <!-- <span class="badge badge-pill badge-warning">New</span> -->
+            </a>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="{{ route('customers.index') }}">
+              <i class="fa fa-user-circle"></i>
+              <span>Customer</span>              
+            </a>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="{{ route('accounts.index') }}">
+              <i class="fa fa-money fa-tachometer-alt"></i>
+              <span>Account</span>              
+            </a>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="{{ route('accounts.index') }}">
+              <i class="fa fa-money fa-tachometer-alt"></i>
+              <span>Billings</span>              
+            </a>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="{{ route('accounts.index') }}">
+              <i class="fa fa-money fa-tachometer-alt"></i>
+              <span>Transection</span>              
+            </a>
+          </li>
 
         </ul>
       </div>
