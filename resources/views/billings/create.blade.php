@@ -66,7 +66,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Agent:</strong>
-               <select class="form-control" name="" id="">
+               <select class="form-control" name="agent_id" id="">
                <option value="">Select Agent</option>
                 @foreach ($agents as $key => $value)
                   <option value="{{ $key }}">{{ $value }}</option>
@@ -77,7 +77,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Customer:</strong>
-                <select class="form-control" name="" id="">
+                <select class="form-control" name="customer_id" id="">
                <option value="">Select Customer</option>
                 @foreach ($customers as $key => $value)
                   <option value="{{ $key }}">{{ $value }}</option>

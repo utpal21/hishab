@@ -45,7 +45,27 @@ class BillingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+         $request->validate([
+            'code' => 'required|unique:agents',
+            'quantity' => 'required',
+            'do_date' => 'required',
+            'shipment_date' => 'required',
+            'agent_amount' => 'required',
+            'customer_amount' => 'required',
+            'agent_id' => 'required',
+            'customer_id' => 'required',
+        ]);
+        $data = $request->all();
+        if(empty($data['active'])){
+            $data['active'] = 0;
+        }     
+        if(!empty($data['finished'])){
+            $data['finished'] = 1;
+        }     
+  
+        Billing::create($data);   
+        return redirect()->route('billings.index')
+                        ->with('success','Billing created successfully.');
     }
 
     /**
