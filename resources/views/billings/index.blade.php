@@ -22,7 +22,14 @@
         <tr>
             <th>No</th>
             <th>Code</th>
-            <th>Name</th>
+            <th>Volum</th>
+            <th>D/O Date</th>
+            <th>Shipment Date</th>
+            <th>Agent Amount</th>
+            <th>Customer Amount</th>
+            <th>Agent Name</th>
+            <th>Customer Name</th>
+            <th>Finished</th>
             <th>status</th>
             <th width="280px">Action</th>
         </tr>
@@ -30,7 +37,14 @@
         <tr>
             <td>{{ ++$i }}</td>
             <td>{{ $billing->code }}</td>
-            <td>{{ $billing->name }}</td>
+            <td>{{ $billing->quantity }}</td>
+            <td>{{ $billing->do_date }}</td>
+            <td>{{ $billing->shipment_date }}</td>
+            <td>{{ $billing->agent_amount }}</td>
+            <td>{{ $billing->customer_amount }}</td>
+            <td>{{ $billing->agent->name }}</td>
+            <td>{{ $billing->customer->name }}</td>
+            <td>{{ $billing->finished }}</td>
             <td>{{ $billing->active }}</td>
             <td>
                 <form action="{{ route('billings.destroy',$billing->id) }}" method="POST">
@@ -42,7 +56,7 @@
                     @csrf
                     @method('DELETE')
       
-                    <button type="submit" class="btn btn-danger">Delete</button>
+                    <button type="submit" class="btn btn-danger" disabled>Delete</button>
                 </form>
             </td>
         </tr>

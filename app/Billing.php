@@ -23,14 +23,16 @@ class Billing extends Model
      */
     public function agent()
     {
-        return $this->hasOne('App\Agent');
+       // return $this->hasOne('App\Agent');
+        return $this->belongsTo('App\Agent', 'agent_id');
     }
     /**
      * Get the phone record associated with the user.
      */
     public function customer()
     {
-        return $this->hasOne('App\Customer');
+        //return $this->hasOne('App\Customer');
+        return $this->belongsTo('App\Customer', 'customer_id');
     }
 
 }

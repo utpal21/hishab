@@ -30,37 +30,37 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>code:</strong>
-                <input type="text" name="code" class="form-control" placeholder="Code">
+                <input type="text" name="code" class="form-control" placeholder="Code" value="{{ old('code') }}">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Volum:</strong>
-                <input type="text" name="quantity" class="form-control" placeholder="Number of container">                
+                <input type="text" name="quantity" class="form-control" placeholder="Number of container" value="{{ old('quantity')}}">                
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>D/O Date:</strong>
-                <input type="text" name="do_date" class="form-control" placeholder="yyyy-mm-dd">                
+                <input type="text" name="do_date" class="form-control" placeholder="yyyy-mm-dd" value="{{ old('do_date') }}">                
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Shipping Date:</strong>
-                <input type="text" name="shipment_date" class="form-control" placeholder="yyyy-mm-dd">                
+                <input type="text" name="shipment_date" class="form-control" placeholder="yyyy-mm-dd" value="{{ old('shipment_date') }}">                
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Agent amount:</strong>
-                <input type="text" name="agent_amount" class="form-control" placeholder="Agent Amount">                
+                <input type="text" name="agent_amount" class="form-control" placeholder="Agent Amount" value="{{ old('agent_amount') }}">                
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Customer amount:</strong>
-                <input type="text" name="customer_amount" class="form-control" placeholder="Customer Amount">                
+                <input type="text" name="customer_amount" class="form-control" placeholder="Customer Amount" value="{{ old('customer_amount') }}">                
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
@@ -87,7 +87,7 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">          
              <div class="form-check">
-                <input type="checkbox" value="0" name="finished" class="form-check-input" id="exampleCheck1">
+                <input type="checkbox" value="1" name="finished" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Finished</label>
             </div>
         </div>

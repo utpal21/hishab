@@ -83,8 +83,7 @@ class AgentController extends Controller
      */
     public function update(Request $request, Agent $agent)
     {
-        $request->validate([
-            'code' => 'required|unique:agents',
+        $request->validate([            
             'name' => 'required',
         ]);
         $data = $request->all();
@@ -94,7 +93,7 @@ class AgentController extends Controller
   
         $agent->update($data);   
         return redirect()->route('agents.index')
-                        ->with('success','Agent created successfully.');
+                        ->with('success','Agent Updated successfully.');
     }
 
     /**

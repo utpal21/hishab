@@ -83,8 +83,7 @@ class AccountController extends Controller
      */
     public function update(Request $request, Account $account)
     {
-        $request->validate([
-            'code' => 'required|unique:accounts',
+        $request->validate([            
             'name' => 'required',
         ]);
         $data = $request->all();

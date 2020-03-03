@@ -31,7 +31,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Code:</strong>
-                    <input type="text" name="code" class="form-control" value="{{ $customer->code }}" placeholder="Code">   
+                    <input type="text" name="code" class="form-control" value="{{ $customer->code }}" placeholder="Code" disabled>   
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
