@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+@extends('layouts.admind')
  
 @section('content')
    <div class="row">
@@ -43,13 +43,13 @@
              <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>D/O Date:</strong>
-                <input type="text" name="do_date" class="form-control" value="{{ $billing->do_date }}" placeholder="yyyy-mm-dd" >                
+                <input type="text" name="do_date" class="form-control datepicker" value="{{ $billing->do_date }}" placeholder="yyyy-mm-dd" >                
             </div>
         </div>
              <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Shipping Date:</strong>
-                <input type="text" name="shipment_date" class="form-control" value="{{ $billing->shipment_date }}" placeholder="yyyy-mm-dd" >                
+                <input type="text" name="shipment_date" class="form-control datepicker" value="{{ $billing->shipment_date }}" placeholder="yyyy-mm-dd" >                
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">

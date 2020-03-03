@@ -1,4 +1,4 @@
-@extends('layouts.admin') 
+@extends('layouts.admind') 
 @section('content')
     <div class="row">
     <div class="col-lg-12 margin-tb">
@@ -42,13 +42,13 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>D/O Date:</strong>
-                <input type="text" name="do_date" class="form-control" placeholder="yyyy-mm-dd" value="{{ old('do_date') }}">                
+                <input autocomplete="off" type="text" name="do_date" class="form-control datepicker" placeholder="yyyy-mm-dd" value="{{ old('do_date') }}">                
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Shipping Date:</strong>
-                <input type="text" name="shipment_date" class="form-control" placeholder="yyyy-mm-dd" value="{{ old('shipment_date') }}">                
+                <input autocomplete="off" type="text" name="shipment_date" class="form-control datepicker" placeholder="yyyy-mm-dd" value="{{ old('shipment_date') }}">                
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
